@@ -197,6 +197,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -270,7 +280,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-07T10:55:43+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-07T13:22:57+08:00">
                 2019-07-07
               </time>
             
@@ -280,6 +290,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程语言/" itemprop="url" rel="index">
+                    <span itemprop="name">编程语言</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -310,7 +342,28 @@
       
         
           
-            <h1 id="你好弟弟"><a href="#你好弟弟" class="headerlink" title="你好弟弟"></a>你好弟弟</h1>
+            <p>先是国际惯例：</p>
+<p>新建HelloWorld.java，内容如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;                                           <span class="comment">//类的声明</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;             <span class="comment">//主程序</span></span><br><span class="line">                System.out.println(<span class="string">"What's your problem?"</span>);  <span class="comment">//输出语句</span></span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后编译程序</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javac HelloWorld.java</span><br></pre></td></tr></table></figure>
+
+<p>最后运行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java HelloWorld</span><br></pre></td></tr></table></figure>
+
+<p>常用的命名规则</p>
+<ul>
+<li>包——全部小写，如：com.norji.包的作用</li>
+<li>类或接口——每个单词首字母大写（驼峰命名）</li>
+<li>方法和变量——第二个单词开始首字母大写</li>
+<li>常量——全部大写，用“_”分开</li>
+</ul>
+<p>P.S.</p>
+<ol>
+<li>装完JDK设置一下环境变量-&gt;在path里添加bin文件夹路径，在JAVA_HOME里添加jdk文件夹路径，classpath不用设置</li>
+</ol>
+
           
         
       
@@ -530,7 +583,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
             
 
           </nav>
