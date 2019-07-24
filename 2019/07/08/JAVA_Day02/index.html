@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="常量 字符串 整数 小数 字符 布尔 空 null  编码 原码——最高位符号位，0正1负 反码——正数不变，负数逐位取反，符号位除外 补码——正数不变，负数反码加1  基本数据类型1.整数型 byte 一字节 -128~127 short 两字节 -2^15~2^15-1 int 四字节 -2^31~2^31-1 long 八字节 -2^63~2^63-12.浮点型 float 四字节 -3.4">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-21T13:41:19.328Z">
+<meta property="og:updated_time" content="2019-07-24T15:02:49.685Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JAVA_Day02">
 <meta name="twitter:description" content="常量 字符串 整数 小数 字符 布尔 空 null  编码 原码——最高位符号位，0正1负 反码——正数不变，负数逐位取反，符号位除外 补码——正数不变，负数反码加1  基本数据类型1.整数型 byte 一字节 -128~127 short 两字节 -2^15~2^15-1 int 四字节 -2^31~2^31-1 long 八字节 -2^63~2^63-12.浮点型 float 四字节 -3.4">
@@ -512,7 +512,28 @@
 <li>表达式结果是 true，结果1赋给变量。</li>
 <li>表达式结果是 false，结果2赋给变量。</li>
 </ul>
-<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ul>
+<li><p>定义格式：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">修饰符 返回值类型 方法名 （参数列表）｛</span><br><span class="line">     代码...        </span><br><span class="line">    <span class="keyword">return</span> ;     </span><br><span class="line">｝</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>定义格式解释：</p>
+<ul>
+<li><b>修饰符</b>： 目前固定写法 public static 。</li>
+<li><b>返回值类型</b>： 目前固定写法 void ，其他返回值类型在后面的课程讲解。</li>
+<li><b>方法名</b>：为我们定义的方法起名，满足标识符的规范，用来调用方法。</li>
+<li><b>参数列表</b>： 目前无参数， 带有参数的方法在后面的课程讲解。</li>
+<li><b>return</b>：方法结束。因为返回值类型是void，方法大括号内的return可以不写。</li>
+</ul>
+</li>
+<li><p>举例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">methodName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   System.out.println(<span class="string">"这是一个方法"</span>);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="方法的调用"><a href="#方法的调用" class="headerlink" title="方法的调用"></a>方法的调用</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//调用定义的方法method</span></span><br><span class="line">    method();</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//定义方法，被main方法调用</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   System.out.println(<span class="string">"自己定义的方法，需要被main调用运行"</span>);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="JShell脚本工具"><a href="#JShell脚本工具" class="headerlink" title="JShell脚本工具"></a>JShell脚本工具</h3><p>当我们编写的代码非常少的时候，而又不愿意编写类，main方法，也不愿意去编译和运行，这个时候可以使用JShell工具。</p>
+
       
     </div>
     
@@ -682,7 +703,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#常量"><span class="nav-number">1.</span> <span class="nav-text">常量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编码"><span class="nav-number">2.</span> <span class="nav-text">编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本数据类型"><span class="nav-number">3.</span> <span class="nav-text">基本数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-整数型"><span class="nav-number">3.1.</span> <span class="nav-text">1.整数型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-浮点型"><span class="nav-number">3.2.</span> <span class="nav-text">2.浮点型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-字符型"><span class="nav-number">3.3.</span> <span class="nav-text">3.字符型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-布尔型"><span class="nav-number">3.4.</span> <span class="nav-text">4.布尔型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#混合运算时的类型变换"><span class="nav-number">4.</span> <span class="nav-text">混合运算时的类型变换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#P-S"><span class="nav-number">5.</span> <span class="nav-text">P.S.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运算符"><span class="nav-number">6.</span> <span class="nav-text">运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#算术运算符"><span class="nav-number">6.1.</span> <span class="nav-text">算术运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#赋值运算符"><span class="nav-number">6.2.</span> <span class="nav-text">赋值运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#比较运算符"><span class="nav-number">6.3.</span> <span class="nav-text">比较运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">6.4.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三元运算符"><span class="nav-number">6.5.</span> <span class="nav-text">三元运算符</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法"><span class="nav-number">7.</span> <span class="nav-text">方法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#常量"><span class="nav-number">1.</span> <span class="nav-text">常量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编码"><span class="nav-number">2.</span> <span class="nav-text">编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本数据类型"><span class="nav-number">3.</span> <span class="nav-text">基本数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-整数型"><span class="nav-number">3.1.</span> <span class="nav-text">1.整数型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-浮点型"><span class="nav-number">3.2.</span> <span class="nav-text">2.浮点型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-字符型"><span class="nav-number">3.3.</span> <span class="nav-text">3.字符型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-布尔型"><span class="nav-number">3.4.</span> <span class="nav-text">4.布尔型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#混合运算时的类型变换"><span class="nav-number">4.</span> <span class="nav-text">混合运算时的类型变换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#P-S"><span class="nav-number">5.</span> <span class="nav-text">P.S.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运算符"><span class="nav-number">6.</span> <span class="nav-text">运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#算术运算符"><span class="nav-number">6.1.</span> <span class="nav-text">算术运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#赋值运算符"><span class="nav-number">6.2.</span> <span class="nav-text">赋值运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#比较运算符"><span class="nav-number">6.3.</span> <span class="nav-text">比较运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">6.4.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三元运算符"><span class="nav-number">6.5.</span> <span class="nav-text">三元运算符</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法"><span class="nav-number">7.</span> <span class="nav-text">方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#方法的调用"><span class="nav-number">7.1.</span> <span class="nav-text">方法的调用</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JShell脚本工具"><span class="nav-number">8.</span> <span class="nav-text">JShell脚本工具</span></a></li></ol></div>
             
 
           </div>
